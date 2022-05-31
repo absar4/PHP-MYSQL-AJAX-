@@ -194,7 +194,22 @@ PHP has two operators that are specially designed for strings.
 
 Operator	Name	                    Result
 .	        Concatenation	            $txt1 . $txt2	Concatenation of $txt1 and $txt2	
-.=	        Concatenation assignment	$txt1 .= $txt2	Appends $txt2 to $txt1
+
+<?php
+$txt1 = "Hello";
+$txt2 = " world!";
+echo $txt1 . $txt2;
+?>  
+
+.=	      Concatenation assignment	    $txt1 .= $txt2	Appends $txt2 to $txt1
+
+<?php
+$txt1 = "Hello";
+$txt2 = " world!";
+$txt1 .= $txt2;
+echo $txt1;
+?>  
+
 
 
 
@@ -207,8 +222,53 @@ The PHP array operators are used to compare arrays.
 
 Operator	Name	        Result	
 +	        Union	        $x + $y	    Union of $x and $y	
+
+<?php
+$x = array("a" => "red", "b" => "green");  
+$y = array("c" => "blue", "d" => "yellow");  
+
+print_r($x + $y); // union of $x and $y
+?>  
+
 ==	        Equality	    $x == $y	Returns true if $x and $y have the same key/value pairs	
+
+<?php
+$x = array("a" => "red", "b" => "green");  
+$y = array("c" => "blue", "d" => "yellow");  
+
+var_dump($x == $y);
+?>  
 ===	        Identity	    $x === $y	Returns true if $x and $y have the same key/value pairs in the same order and of the same types	    
+<?php
+$x = array("a" => "red", "b" => "green");  
+$y = array("c" => "blue", "d" => "yellow");  
+
+var_dump($x === $y);
+?>  
+
 !=	        Inequality	    $x != $y	Returns true if $x is not equal to $y	
+<?php
+$x = array("a" => "red", "b" => "green");  
+$y = array("c" => "blue", "d" => "yellow");  
+
+var_dump($x != $y);
+?>  
+
+
 <>	        Inequality	    $x <> $y	Returns true if $x is not equal to $y	
+
+<?php
+$x = array("a" => "red", "b" => "green");  
+$y = array("c" => "blue", "d" => "yellow");  
+
+var_dump($x <> $y);
+?>  
+
 !==	        Non-identity	$x !== $y	Returns true if $x is not identical to $y	
+
+<?php
+$x = array("a" => "red", "b" => "green");  
+$y = array("c" => "blue", "d" => "yellow");  
+
+var_dump($x !== $y);
+?>  
