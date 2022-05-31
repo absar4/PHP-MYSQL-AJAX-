@@ -143,9 +143,26 @@ xor	Xor	    $x xor $y	True if either $x or $y is true, but not both
 
 
 
-<!-- PHP String Operators
+PHP String Operators
 PHP has two operators that are specially designed for strings.
 
-Operator	Name	Example	Result	Show it
-.	Concatenation	$txt1 . $txt2	Concatenation of $txt1 and $txt2	
-.=	Concatenation assignment	$txt1 .= $txt2	Appends $txt2 to $txt1 -->
+Operator	Name	                    Result
+.	        Concatenation	            $txt1 . $txt2	Concatenation of $txt1 and $txt2	
+.=	        Concatenation assignment	$txt1 .= $txt2	Appends $txt2 to $txt1
+
+
+
+
+
+
+
+PHP Array Operators
+The PHP array operators are used to compare arrays.
+
+Operator	Name	        Result	
++	        Union	        $x + $y	    Union of $x and $y	
+==	        Equality	    $x == $y	Returns true if $x and $y have the same key/value pairs	
+===	        Identity	    $x === $y	Returns true if $x and $y have the same key/value pairs in the same order and of the same types	    
+!=	        Inequality	    $x != $y	Returns true if $x is not equal to $y	
+<>	        Inequality	    $x <> $y	Returns true if $x is not equal to $y	
+!==	        Non-identity	$x !== $y	Returns true if $x is not identical to $y	
