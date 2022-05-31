@@ -11,6 +11,8 @@ Logical operators
 String operators
 Array operators
 Conditional assignment operators 
+
+
 PHP Arithmetic Operators
 The PHP arithmetic operators are used with numeric values to perform common arithmetical operations, such as addition, subtraction, multiplication etc.
 
@@ -40,52 +42,52 @@ x %= y	        x = x % y	    Modulus
 
 -->
 
-<!-- 
+
     PHP Comparison Operators:
 The PHP comparison operators are used to compare two values (number or string):
 
 Operator    Name	                    Example	        Result	Show it
 ==	        Equal	                    $x == $y	    Returns true if $x is equal to $y	
-===	        Identical	                $x === $y	    Returns true if $x is equal to $y, and they are of the same type	
-!=	        Not equal	                $x != $y	    Returns true if $x is not equal to $y	
-<>	        Not equal	                $x <> $y	    Returns true if $x is not equal to $y	
-!==	        Not identical	            $x !== $y	    Returns true if $x is not equal to $y, or they are not of the same type	
->	        Greater than	            $x > $y	        Returns true if $x is greater than $y	
-<	        Less than	                $x < $y	        Returns true if $x is less than $y	
->=	        Greater than or equal to	$x >= $y	    Returns true if $x is greater than or equal to $y	
-<=	        Less than or equal to	    $x <= $y	    Returns true if $x is less than or equal to $y 
-
--->
 <?php
 $x = 100;  
 $y = "100";
 
 var_dump($x == $y); // returns true because values are equal
-?>  
+?> 
+
+===	        Identical	                $x === $y	    Returns true if $x is equal to $y, and they are of the same type	
 <?php
 $x = 100;  
 $y = "100";
 
 var_dump($x === $y); // returns false because types are not equal
-?>  
+?>
+
+!=	        Not equal	                $x != $y	    Returns true if $x is not equal to $y	
 <?php
 $x = 100;  
 $y = "100";
 
 var_dump($x != $y); // returns false because values are equal
 ?>  
+
+<>	        Not equal	                $x <> $y	    Returns true if $x is not equal to $y	
 <?php
 $x = 100;  
 $y = "100";
 
 var_dump($x <> $y); // returns false because values are equal
 ?>  
+
+!==	        Not identical	            $x !== $y	    Returns true if $x is not equal to $y, or they are not of the same type	
 <?php
 $x = 100;  
 $y = "100";
 
 var_dump($x !== $y); // returns true because types are not equal
 ?>  
+
+>	        Greater than	            $x > $y	        Returns true if $x is greater than $y	
 <?php
 $x = 100;
 $y = 50;
@@ -93,6 +95,7 @@ $y = 50;
 var_dump($x > $y); // returns true because $x is greater than $y
 ?>  
 
+<	        Less than	                $x < $y	        Returns true if $x is less than $y	
 <?php
 $x = 10;
 $y = 50;
@@ -100,7 +103,7 @@ $y = 50;
 var_dump($x < $y); // returns true because $x is less than $y
 ?>  
 
-
+>=	        Greater than or equal to	$x >= $y	    Returns true if $x is greater than or equal to $y	
 <?php
 $x = 50;
 $y = 50;
@@ -109,9 +112,40 @@ var_dump($x >= $y); // returns true because $x is greater than or equal to $y
 ?>  
 
 
+<=	        Less than or equal to	    $x <= $y	    Returns true if $x is less than or equal to $y 
 <?php
 $x = 50;
 $y = 50;
 
 var_dump($x <= $y); // returns true because $x is less than or equal to $y
 ?> 
+
+
+
+
+PHP Logical Operators
+The PHP logical operators are used to combine conditional statements.
+
+Operator	Name	    Result	Show it
+and	And	    $x and $y	True if both $x and $y are true	
+
+or	Or	    $x or $y	True if either $x or $y is true	
+
+xor	Xor	    $x xor $y	True if either $x or $y is true, but not both	
+
+&&	And	    $x && $y	True if both $x and $y are true	
+
+||	Or	    $x || $y	True if either $x or $y is true	
+
+!	Not	    !$x	        True if $x is not true	
+
+
+
+
+
+<!-- PHP String Operators
+PHP has two operators that are specially designed for strings.
+
+Operator	Name	Example	Result	Show it
+.	Concatenation	$txt1 . $txt2	Concatenation of $txt1 and $txt2	
+.=	Concatenation assignment	$txt1 .= $txt2	Appends $txt2 to $txt1 -->
