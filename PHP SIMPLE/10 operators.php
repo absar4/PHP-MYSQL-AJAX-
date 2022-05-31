@@ -128,17 +128,63 @@ The PHP logical operators are used to combine conditional statements.
 
 Operator	Name	    Result	Show it
 and	And	    $x and $y	True if both $x and $y are true	
+<?php
+$x = 100;  
+$y = 50;
 
+if ($x == 100 and $y == 50) {
+    echo "Hello world!";
+}
+?>  
 or	Or	    $x or $y	True if either $x or $y is true	
+<?php
+$x = 100;  
+$y = 50;
+
+if ($x == 100 or $y == 80) {
+    echo "Hello world!";
+}
+?>  
 
 xor	Xor	    $x xor $y	True if either $x or $y is true, but not both	
 
+<?php
+$x = 100;  
+$y = 50;
+
+if ($x == 100 xor $y == 80) {
+    echo "Hello world!";
+}
+?>  
+
 &&	And	    $x && $y	True if both $x and $y are true	
+<?php
+$x = 100;  
+$y = 50;
+
+if ($x == 100 && $y == 50) {
+    echo "Hello world!";
+}
+?>  
 
 ||	Or	    $x || $y	True if either $x or $y is true	
+<?php
+$x = 100;  
+$y = 50;
+
+if ($x == 100 || $y == 80) {
+    echo "Hello world!";
+}
+?> 
 
 !	Not	    !$x	        True if $x is not true	
+<?php
+$x = 100;  
 
+if ($x !== 90) {
+    echo "Hello world!";
+}
+?>      
 
 
 
