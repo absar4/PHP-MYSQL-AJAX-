@@ -10,13 +10,52 @@ In PHP we have the following conditional statements:
 4. switch statement - selects one of many blocks of code to be executed
 
 if (condition) {
-  code to be executed if condition is true;
+code to be executed if condition is true;
 }
 
 <?php
 $age = 20;
 
 if ($age >= 18) {
-  echo "You can go to the Cinema";
+    echo "You can go to the Cinema";
+}
+?>
+
+if (condition) {
+code to be executed if this condition is true;
+} elseif (condition) {
+code to be executed if first condition is false and this condition is true;
+} else {
+code to be executed if all conditions are false;
+}
+<?php
+$age = 20;
+
+if ($age <= 18) {
+    echo "You can go to the Cinema";
+} elseif ($age == 20) {
+    echo "You can bring your gf";
+} else {
+    echo "You are not eligible";
+}
+?>
+
+
+Switch statements
+<?php
+$favcolor = "red";
+
+switch ($favcolor) {
+  case "red":
+    echo "Your favorite color is red!";
+    break;
+  case "blue":
+    echo "Your favorite color is blue!";
+    break;
+  case "green":
+    echo "Your favorite color is green!";
+    break;
+  default:
+    echo "Your favorite color is neither red, blue, nor green!";
 }
 ?>
