@@ -69,3 +69,6 @@ for ($tableStartValue; $tableStartValue <= $tableTill; $tableStartValue++) {
 }
 
 ?>
+
+
+For Each will be covered in coming up lectures
