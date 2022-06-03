@@ -3,7 +3,7 @@ An array stores multiple values in one single variable:
 Example
 <?php
 $fruits = array("apple", "mange", "cherry");
-echo "I love to eat " . $cars[0] . ", " . $cars[1] . " and " . $cars[2] . ".";
+echo "I love to eat " . $fruits[0] . ", " . $fruits[1] . " and " . $fruits[2] . ".";
 ?>
 
 
