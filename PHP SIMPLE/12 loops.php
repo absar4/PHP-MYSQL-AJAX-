@@ -17,36 +17,55 @@ while loop
 
 syntax
 while (condition is true) {
-  code to be executed;
+code to be executed;
 }
 
 
 <?php
-// $x = 1;
+$x = 1;
 
-// while($x <= 5) {
-//   echo "The number is: $x <br>";
-//   $x++;
-// }
+while($x <= 5) {
+  echo "The number is: $x <br>";
+  $x++;
+}
 ?>
 
-👀=> Challange to make mathematics tables 
+👀=> Challange to make mathematics tables
 
 <?php
-$tableOf = 2;
-echo "$tableOf x 1 = " . $tableOf * 1;
-echo "$tableOf x 2 = " . $tableOf * 2;
-echo "$tableOf x 3 = " . $tableOf * 3;
-echo "$tableOf x 4 = " . $tableOf * 4;
-echo "$tableOf x 5 = " . $tableOf * 5;
-echo "$tableOf x 6 = " . $tableOf * 6;
-echo "$tableOf x 7 = " . $tableOf * 7;
-echo "$tableOf x 8 = " . $tableOf * 8;
-echo "$tableOf x 9 = " . $tableOf * 9;
-echo "$tableOf x 10 = " . $tableOf * 10;
+
+$tableOf = 2;    
+echo "$tableOf x 1 = " . $tableOf * 1 . "<br>";
+echo "$tableOf x 2 = " . $tableOf * 2 . "<br>";
+echo "$tableOf x 3 = " . $tableOf * 3 . "<br>";
+echo "$tableOf x 4 = " . $tableOf * 4 . "<br>";
+echo "$tableOf x 5 = " . $tableOf * 5 . "<br>";
+echo "$tableOf x 6 = " . $tableOf * 6 . "<br>";
+echo "$tableOf x 7 = " . $tableOf * 7 . "<br>";
+echo "$tableOf x 8 = " . $tableOf * 8 . "<br>";
+echo "$tableOf x 9 = " . $tableOf * 9 . "<br>";
+echo "$tableOf x 10 = " . $tableOf * 10 . "<br>";
 ?>
 
 👀=> Challange to make mathematics tables with loop
 
+<?php
+
+$tableStartValue = 1;
+$tableTill = 10;
+$tableOf = 2;
+while ($tableStartValue <= $tableTill) {
+    echo "$tableOf x $tableStartValue = " . $tableOf * $tableStartValue . "<br>";
+    $tableStartValue++;
+}
 
 
+// Same with For loop
+$tableStartValue = 1;
+$tableTill = 20;
+$tableOf = 2;
+for ($tableStartValue; $tableStartValue <= $tableTill; $tableStartValue++) {
+    echo "$tableOf x $tableStartValue = " . $tableOf * $tableStartValue . "<br>";
+}
+
+?>
