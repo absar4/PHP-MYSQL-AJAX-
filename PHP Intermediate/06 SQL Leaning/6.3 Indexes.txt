@@ -1,0 +1,38 @@
+Indexes is just a feature that will hel you to search much much faster
+Like You have a topic you are looking for so you dont have to go through all the book but you have to read the indexes instead and point out what is realated to your to your topic then you can read that.... and this is much much faster than going through all the book 
+
+Similarly, there are indexs in SQL Database that will work on back side but make your searches much faster 
+
+let's say you have to search by title and you have many titles that are same so when you run a query without applying indexes like 
+SELECT * FROM  `article` WHERE title = 'first post'
+then if you have 100s or even 1000s of records  then you can see that the search is very slow
+
+
+So now to avoid this problem we are gonna use indexes
+Follow the Steps
+1. Click on Structure tab
+2. Scroll down and click on `Create an index on 1 columns [GO]`
+3. You can add index name if you want or leave it blank
+4. Now set index choice `index`
+5. then select column as `title` and click on GO
+
+
+Now you can use 
+SELECT * FROM  `article` WHERE title = 'first post' 
+
+=======================
+ORDER in SQL
+
+SELECT * FROM  `article` ORDER BY title(column name)
+it will order data alphabatically 
+
+You can also use 
+SELECT * FROM  `article` ORDER BY title(column name) DESC
+it will order data alphabatically  but in inverse of desending then there we use DESC keyword
+
+
+
+
+
+
+

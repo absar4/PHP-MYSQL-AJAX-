@@ -1,0 +1,9 @@
+1. SELECT column1, column2 FROM tablename;
+2. SELECT * FROM tablename;
+3. SELECT column1, column2 FROM tablename WHERE condition;
+   - SELECT * FROM article WHERE id = 2;
+   - SELECT * FROM article WHERE title = "an informational post";
+4. SELECT column1, column2 FROM tablename WHERE condition1 AND condition2;
+5. SELECT column1, column2 FROM tablename WHERE condition1 OR condition2;
+   - SELECT * FROM article WHERE title = "an informational post" OR title = "first post";
+ 
