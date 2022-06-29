@@ -4,6 +4,12 @@
 require_once "database.php";
 require_once "article-func.php";
 
+session_start();
+// var_dump($_SESSION); 
+if (!(isset($_SESSION['is_logged_in']) && $_SESSION['is_logged_in'])) {
+    die("unauthorized");
+}
+
 $errors = [];
 $title = '';
 $content = '';

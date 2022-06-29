@@ -1,8 +1,15 @@
 <?php
-// database into funcion
-// title and content validation
-require_once "database.php";
+require_once "classes/Database.php";
 require_once "article-func.php";
+
+session_start();
+
+$db = new Database();
+$conn = $db->getConn();
+ 
+if (!(isset($_SESSION['is_logged_in']) && $_SESSION['is_logged_in'])) {
+    die("unauthorized");
+}
 
 $errors = [];
 $title = '';

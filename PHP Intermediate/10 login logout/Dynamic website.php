@@ -17,6 +17,20 @@ if ($results === false) {
 }
 require_once "header.php";
 ?>
+
+
+<?php
+session_start(); 
+// var_dump($_SESSION); 
+if (isset($_SESSION['is_logged_in']) && $_SESSION['is_logged_in']):
+?>
+<p>You are logged in <a href="logout.php">Logout</a></p>
+<?php $link = '<h2><a href="new-article.php">Add a new Article</a></h2>'; ?>
+<?php else : ?>
+    <p>You are logged out <a href="login.php">Login</a></p>
+    <?php $link = ''; ?>
+<?php endif; ?>
+
         <?php if (empty($articles)) : ?>
             <h1>No Items Found</h1>
         <?php else : ?>
@@ -30,6 +44,6 @@ require_once "header.php";
                 <?php endforeach; ?>
             </ul>
         <?php endif; ?>
+        <?= $link ?>
 
-        <h2><a href="new-article.php">Add a new Article</a></h2>
 <?php require_once "footer.php"; ?>

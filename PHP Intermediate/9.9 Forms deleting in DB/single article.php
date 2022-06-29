@@ -21,6 +21,8 @@ require_once "header.php";
             <h1><?= $article['title'] ?></h1>
             <p><?= $article['content'] ?></p>
             <a href="edit-article.php?id=<?= $article['id'] ?>">Edit</a>
+            <a href="delete-article.php?id=<?= $article['id'] ?>">Delete</a>
+            <br><br>
             <a href="Dynamic website.php">GO BACK</a>
         </li>
     </ul>
